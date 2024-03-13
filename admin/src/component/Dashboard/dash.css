@@ -1,0 +1,83 @@
+.demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f476;
+    margin-left: 100px;
+  }
+  
+  .container {
+    max-width: 1250px !important;
+    padding: 20px;
+    margin-top: 60px;
+    transition: 0.5s;
+  }
+  
+  .sidebar-container.minimized + .container {
+    margin-left: 70px;
+  }
+  
+  h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    margin-left: 14%;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    margin-left: 14%;
+  }
+  
+  .search-field {
+    flex: 1 1 190px;
+    margin-bottom: 15px;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  input,
+  select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .table {
+    width: 89% !important;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 5%;
+  }
+  
+  thead {
+    background-color: white;
+    color: black;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
