@@ -42,6 +42,7 @@ const Side = ({ onMenuItemClick }) => {
           </li>
         </ul>
         <div className="sign-out-container">
+          
           <button className="sign-out-button">Sign Out</button>
         </div>
       </div>
