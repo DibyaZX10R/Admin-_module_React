@@ -1,31 +1,38 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import "./Side.css"
+import React from 'react';
+import { Link } from 'react-router-dom';
+import "./Side.css";
 
-const Side = () => {
+const Side = ({ onMenuItemClick }) => {
   return (
     <div>
-      <div class="sidebar-container" id="sidebar">
-		<div class="toggle-icon">
-			<i class="fas fa-bars"></i>
-		</div>
-		<ul class="menu-container" id="maincontent">
-			<li class="menu-item active "><Link to={`/`} class="menu-link">
-					<i class="fas fa-tachometer-alt"></i><span>Dashboard</span></Link></li>
-			<li class="menu-item"><Link to={`/Project`} class="menu-link">
-					<i class="fas fa-project-diagram"></i><span>Project Master</span></Link></li>
-			<li class="menu-item"><Link to={`/Allocation`} class="menu-link">
+      <div className="sidebar-container" id="sidebar">
+        <div className="toggle-icon">
+          <i className="fas fa-bars"></i>
+        </div>
+        <ul className="menu-container" id="maincontent">
+          <li className="menu-item active ">
+            <Link to={`/`} className="menu-link" onClick={() => onMenuItemClick('Welcome to Dashboard')}>
+              <i className="fas fa-tachometer-alt"></i><span>Dashboard</span>
+            </Link>
+          </li>
+          <li className="menu-item">
+            <Link to={`/Project`} className="menu-link" onClick={() => onMenuItemClick('Welcome to Project Master')}>
+              <i className="fas fa-project-diagram"></i><span>Project Master</span>
+            </Link>
+          </li>
+		  <li class="menu-item"><Link to={`/Allocation`} class="menu-link" onClick={() => onMenuItemClick('Welcome to Employee Allocation')}>
 					<i class="fas fa-user"></i><span>Employee Allocation</span></Link></li>
-			<li class="menu-item"><Link to={`/Bench`} class="menu-link">
+			<li class="menu-item"><Link to={`/Bench`} class="menu-link" onClick={() => onMenuItemClick('Welcome to Bench Employees')}>
 					<i class="fas fa-user-clock"></i><span>Bench Employees</span></Link></li>
-			<li class="menu-item "><Link to={`/History_main`} class="menu-link">
+			<li class="menu-item "><Link to={`/History_main`} class="menu-link" onClick={() => onMenuItemClick('Welcome to History')}>
 					<i class="fas fa-history"></i><span>History</span></Link></li>
-			<li class="menu-item"><Link to={`/Time`} class="menu-link">
+			<li class="menu-item"><Link to={`/Time`} class="menu-link" onClick={() => onMenuItemClick('Welcome to Timesheet')}>
 					<i class="fas fa-clock"></i><span>Timesheet</span></Link></li>
-		</ul>
-	</div>
+          {/* Add other menu items */}
+        </ul>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Side
+export default Side;

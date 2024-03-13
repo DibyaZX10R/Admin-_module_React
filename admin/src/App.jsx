@@ -1,27 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Dashboard from './component/Dashboard/dashboard'
-import Header from './component/Header/Header'
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
+// import "./Header.css";
 import {
   BrowserRouter, Routes, Route
 } from "react-router-dom"
+import Dashboard from './component/Dashboard/dashboard'
 import Project from './component/Project_Master/Project'
 import Side from './component/Side_Bar/Side'
 import Allocation from './component/Employee_allocation/Allocation'
 import Bench from './component/Bench_Employee/Bench'
 import History_main from './component/History/History_main'
-import Time from './component/Timesheet/Time'
+import Time from './component/Timesheet/Time';
+import Header from './component/Header/Header';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [headerText, setHeaderText] = useState('Welcome to Dashboard');
+
+  const handleMenuItemClick = (text) => {
+    setHeaderText(text);
+  };
 
   return (
     <>
-      <Header />
-      <Side />
-      
+      <Header headerText={headerText} />
+      <Side onMenuItemClick={handleMenuItemClick} />
 
       <Routes>
         <Route path='/' element={<Dashboard />} />
@@ -32,7 +35,7 @@ function App() {
         <Route path='/Time' element={<Time/>} />
       </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
