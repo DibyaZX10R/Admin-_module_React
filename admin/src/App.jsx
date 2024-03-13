@@ -15,7 +15,7 @@ import Time from './component/Timesheet/Time';
 import Header from './component/Header/Header';
 
 function App() {
-  const [headerText, setHeaderText] = useState('Welcome to Dashboard');
+  const [headerText, setHeaderText] = useState('Welcome To Home ');
 
   const handleMenuItemClick = (text) => {
     setHeaderText(text);
