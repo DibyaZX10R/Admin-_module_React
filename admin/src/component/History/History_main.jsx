@@ -1,35 +1,38 @@
 import React from 'react';
 import "./History_main.css"
-
+ 
 const History = () => {
     return (
         <div>
             <h2 style={{ color: 'red' }}>History:</h2>
-
-            <div className="maincontainerbox">
-                <div className="sbmaincontainer_1">
+ 
+            <div className="Hcontainerbox">
+                <div className="Hsbcontainer-1">
                     <div className="table">
                         <div>
-                            <div className="input-div">
+                            <div className="H-input">
                                 <form id="searchByIdForm">
+                                <label for="employeeId">Employee Id :</label>
                                     <input type="text" id="searchByIdInput" placeholder="Search by Emp ID" name="search" />
-                                    <button type="submit"><i className="fa fa-search"></i></button>
+                                   
                                 </form>
                             </div>
-                            <div className="input-div">
+                            <div className="H-input">
+                               
                                 <form id="searchByNameForm">
+                                <label for="employeeId">Employee Name :</label>
                                     <input type="text" id="searchByNameInput" placeholder="Search by Emp Name" name="search" />
-                                    <button type="submit"><i className="fa fa-search"></i></button>
+                                   
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <hr />
-
-            <table id="dataTable">
+ 
+           
+ 
+            <table className='h-table'>
                 <colgroup>
                     <col style={{ width: '10%' }} className="table_headings" />
                     <col style={{ width: '10%' }} className="table_headings" />
@@ -61,9 +64,9 @@ const History = () => {
         </div>
     );
 }
-
+ 
 function toggleSidebar() {
     // Implement toggleSidebar function logic here
 }
-
+ 
 export default History;

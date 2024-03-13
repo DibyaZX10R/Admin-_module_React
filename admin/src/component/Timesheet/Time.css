@@ -1,0 +1,76 @@
+.employee-info {
+    position: absolute;
+    top: 150px; /* Adjust top space as needed */
+    left: 250px; /* Adjust left space as needed */
+}
+ 
+.date-div {
+    margin-top: 100px; /* Adjust top space as needed */
+    margin-top: 108px;
+    margin-left: 950px;
+    margin-right: 250px;
+}
+ 
+.week-start {
+    margin-bottom: 10px;
+}
+ 
+.navigation {
+    margin-top: 10px;
+    text-align: right;
+}
+ 
+.time-table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 200px;
+}
+/*
+.totalHour-div {
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 355px;
+} */
+.time-section{
+    margin-left: 137px;
+    margin-right: 104px;
+}
+/* Time.css */
+ 
+.timenav button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 1386px;
+    margin-right: 105px;
+    width: 8%;
+}
+p{
+   
+    padding: 10px;
+}
+/* Time.css */
+ 
+.totalHour-div {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Vertically center items */
+    margin-top: 20px; /* Add margin at the top */
+    width: 20%;
+    margin-left: 1030px;
+}
+ 
+.totalHour-div label {
+    margin-right: 10px; /* Add spacing between label and input */
+}
+.week-start input{
+    width:80%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;;
+}

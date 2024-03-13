@@ -1,0 +1,64 @@
+.Hcontainerbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 84px;
+    margin-left: 50px;
+}
+ 
+.Hsbcontainer-1 {
+    width: 70%; /* Adjust width as needed */
+    margin: 20px 0; /* Add margin as needed */
+    position: relative;
+}
+ 
+.H-input {
+    /* display: flex; */
+    flex-direction: column; /* Stack inputs vertically */
+    margin-bottom: 10px; /* Add margin between inputs */
+   
+}
+ 
+.H-input form {
+    display: flex;
+    align-items: center;
+}
+ 
+.H-input input[type="text"] {
+    padding: 5px;
+    width: 200px; /* Adjust width as needed */
+    margin-bottom: 5px; /* Add margin between input and label */
+}
+ 
+.h-table {
+    width: calc(92% - 150px);
+    margin: 23px 0px;
+    margin-left: 247px;
+    margin-right: 50px;
+}
+ 
+.table_headings {
+    text-align: left;
+    padding: 10px;
+}
+ 
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+ 
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+ 
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+ 
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
