@@ -1,12 +1,12 @@
 import React from 'react'
 import "./Bench.css"
-
+ 
 const Bench = () => {
   return (
-    
+   
  
-<div class="container">
-    <h2 style={{ color: 'red' }}>Bench Employee's List:</h2>
+<div class="container2">
+    <h2 style={{ color: 'red' }}>Bench Employee List</h2>
     <form class="form-container">
         <div class="search-field">
             <label>Emp ID</label>
@@ -34,10 +34,10 @@ const Bench = () => {
  
        
  
-        
+       
  
     </form>
-    <div class="result-box">
+    <div class="result-box1">
         <div class="search-result">
             <table id="data-table" class="table table-bordered">
                 <thead>
@@ -55,8 +55,9 @@ const Bench = () => {
         </div>
     </div>
 </div>
-    
+   
   )
 }
-
+ 
 export default Bench
+ 

@@ -1,11 +1,11 @@
 import React from 'react'
 import "./Allocation.css"
-
+ 
 const Allocation = () => {
   return (
     <div>
-    <div class="container ">
-        <h2 style={{ color: 'red' }}>Employee Allocation:</h2>
+    <div class="container1 ">
+        {/* <h2 style={{ color: 'red' }}>Employee Allocation:</h2> */}
         <form id="myForm">
             <div class="form-group">
                 <label for="employeeId">Employee Id:</label>
@@ -56,5 +56,5 @@ const Allocation = () => {
     </div>
   )
 }
-
+ 
 export default Allocation
