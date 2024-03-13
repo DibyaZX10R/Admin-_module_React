@@ -9,11 +9,16 @@ const Header = ({ headerText }) => {
   return (
     <div>
       <div className="header">
-        <img src="https://ldtech.in/wp-content/uploads/2024/01/logo.png" alt="Logo" className="headerlogo"/>
+        <img src="https://ldtech.in/wp-content/uploads/2024/01/logo.png" alt="Logo" className="headerlogo" />
         <h1>{headerText}</h1>
-        <Link to="/Home" className="btn">
+        <Link
+          to="/Home"
+          className="btn"
+          onClick={() => onMenuItemClick('Welcome to Home')}
+        >
           <FontAwesomeIcon icon={faHouse} />
         </Link>
+
       </div>
     </div>
   );
