@@ -1,2 +1,69 @@
+.container2 {
+  width: 60%;
+  margin: 110px auto;
+}
 
- 
+
+
+.bench-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.Project-field {
+  width: calc(33.333% - 10px);
+  margin-bottom: 10px;
+}
+
+.Project-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-container {
+  position: relative;
+}
+
+input[type="text"] {
+  width: calc(100% - 30px);
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.search-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.result-box1 {
+  /* background-color: #f2f2f2; */
+  padding: 0px 103px;
+  border-radius: 10px;
+  width: 131%;
+  margin: 30px -199px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

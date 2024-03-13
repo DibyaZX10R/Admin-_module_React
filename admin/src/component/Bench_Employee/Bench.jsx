@@ -6,9 +6,9 @@ const Bench = () => {
    
  
 <div class="container2">
-    <h2 style={{ color: 'red' }}>Bench Employee List</h2>
-    <form class="form-container">
-        <div class="search-field">
+    {/* <h2 style={{ color: 'red' }}>Bench Employee List</h2> */}
+    <form class="bench-container">
+        <div class="Project-field">
             <label>Emp ID</label>
             <div class="input-container">
                 <input type="text" name="empId" id="employeeId" placeholder="Search by Emp ID" />
@@ -16,7 +16,7 @@ const Bench = () => {
             </div>
         </div>
  
-        <div class="search-field">
+        <div class="Project-field">
             <label>Dept</label>
             <div class="input-container">
                 <input type="text" id="dept" name="dept" placeholder="Search by Dept" />
@@ -24,7 +24,7 @@ const Bench = () => {
             </div>
         </div>
  
-        <div class="search-field">
+        <div class="Project-field">
             <label>Emp Name</label>
             <div class="input-container">
                 <input type="text" id="empNames" name="empName" placeholder="Search by Emp Name" />
@@ -60,4 +60,3 @@ const Bench = () => {
 }
  
 export default Bench
- 
