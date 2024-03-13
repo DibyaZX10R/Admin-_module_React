@@ -65,3 +65,24 @@
 .menu-item.active {
   color: #fff; /* Change this to the color you want for active menu item text */
 }
+.sign-out-container {
+  margin-top: 20px;
+}
+
+.sign-out-button {
+  padding: 10px 20px;
+    background-color: #325c3f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 22px;
+
+}
+
+.sign-out-button:hover {
+  background-color: #0f1c13;
+}
