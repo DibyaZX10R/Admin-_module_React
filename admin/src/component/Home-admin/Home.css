@@ -1,0 +1,127 @@
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Pending Task */
+  .pending-div {
+    margin-bottom: 20px;
+  }
+  
+  .pending {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .date-time-card {
+	position: absolute;
+	margin-left: 800px;
+	margin-top: 20px;
+	height: 40px;
+	width: 250px;
+	top: 10%;
+	left: 40%; 
+	transform: translate(-50%, -50%);
+	background-color: #8E7AB5;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+}
+  .date-time {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .pending-div {
+	position: absolute;
+	top: 10%;
+	left: 30%;
+	transform: translate(-20%, -20%);
+	text-align: center;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding-left: 20px;
+	width: 30%;
+	height: 5.5%;
+	background-color: rgb(255, 255, 0);
+	margin-top: 20px;
+}
+
+  
+  /* Calendar */
+  .calendar {
+    display: none;
+    /* Add your calendar styling here */
+  }
+  
+  /* Status Container */
+  .status-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    width: 350%;
+  }
+  
+  /* Status Box */
+  .status-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 140px 70px;
+    padding: 37px;
+    border-radius: 5px;
+    
+   
+  }
+  
+  .status-box p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .status-count {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Chart Container */
+  .chart-container {
+    width: 100%;
+  }
+  .chart-container {
+    width: 28%;
+    margin: 10px 100px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #55d300;
+    box-shadow: 0 0 10px rgba(2, 2, 2, 0.1);
+    padding: 40px;
+    margin-left: 404px;
+    margin-top: -80px;
+ 
+}
+
+#employeeChart {
+    width: 50%;
+    /* Adjust the width as needed */
+    height: auto;
+    margin: auto;
+    display: block;
+    /* Center the canvas horizontally */
+}
+
+  
+  
+  

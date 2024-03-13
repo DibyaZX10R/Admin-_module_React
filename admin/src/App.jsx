@@ -13,7 +13,7 @@ import Bench from './component/Bench_Employee/Bench'
 import History_main from './component/History/History_main'
 import Time from './component/Timesheet/Time';
 import Header from './component/Header/Header';
-
+import Home from './component/Home-admin/Home';
 function App() {
   const [headerText, setHeaderText] = useState('Welcome To Home ');
 
@@ -33,6 +33,7 @@ function App() {
         <Route path='/Bench' element={<Bench />} />
         <Route path='/History_main' element={<History_main />} />
         <Route path='/Time' element={<Time/>} />
+        <Route path='/Home' element={<Home/>}/>
       </Routes>
     </>
   );
