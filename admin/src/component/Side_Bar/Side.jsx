@@ -37,7 +37,7 @@ const Side = ({ onMenuItemClick }) => {
           </li>
           <li className="menu-item">
             <Link to={`/Time`} className="menu-link" onClick={() => onMenuItemClick(' My Timesheet')}>
-              <i className="fas fa-clock"></i><span>Timesheet</span>
+              <i className="fas fa-clock"></i><span>My Timesheet</span>
             </Link>
           </li>
         </ul>
