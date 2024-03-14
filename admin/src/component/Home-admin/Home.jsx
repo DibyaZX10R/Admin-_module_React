@@ -58,17 +58,17 @@ const Dashboard = () => {
                 </div>
             </div>
             <div className="status-container">
-                <div className="status-box" style={{ backgroundColor: 'darkgray' }}>
+                <div className="status-box" style={{ backgroundColor: 'lightgray' }}>
                 <FaCheckCircle color="#4caf50" size={25} />
                     <p id="one"></p>
                     <span className="status-count">Total no. of Employees</span>
                 </div>
-                <div className="status-box" style={{ backgroundColor: 'darkgray' }}>
+                <div className="status-box" style={{ backgroundColor: 'lightgray' }}>
                 <FaTimesCircle color="#f44336" size={25} />
                     <p id="two"></p>
                     <span className="status-count">Unallocated Employee</span>
                 </div>
-                <div className="status-box" style={{ backgroundColor: 'darkgray' }}>
+                <div className="status-box" style={{ backgroundColor: 'lightgray' }}>
                 
                 <FaCheckCircle color="#4caf50" size={25} />
                     <p id="three"></p>
