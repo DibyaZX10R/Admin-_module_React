@@ -1,32 +1,43 @@
 import React, { useState, useEffect } from 'react';
-import './Home.css'; 
+import { PieChart, Pie, Cell } from "recharts";
+import { FaTimes } from "react-icons/fa";
+import './Home.css';
+import {
+    FaCheckCircle,
+    FaTimesCircle,
+    FaExclamationTriangle,
+  } from "react-icons/fa";
+
+const COLORS = ["#4caf50", "#f44336", "#ff9800"];
+
+const pieChartData = [
+  { name: "Approved", value: 5 },
+  { name: "Rejected", value: 3 },
+  { name: "Pending", value: 2 },
+];
 
 const Dashboard = () => {
     const [currentDateTime, setCurrentDateTime] = useState('');
 
     useEffect(() => {
-        // Function to update current date-time
-        const updateDateTime = () => {
-            const now = new Date();
-            const options = {
-                weekday: 'long',
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-                hour: 'numeric',
-                minute: 'numeric',
-                second: 'numeric',
-            };
-            const formattedDateTime = now.toLocaleString('en-US', options);
-            setCurrentDateTime(formattedDateTime);
-        };
-
-        // Update date-time every second
         const intervalId = setInterval(updateDateTime, 1000);
-
-        // Clear interval on component unmount
         return () => clearInterval(intervalId);
     }, []);
+
+    const updateDateTime = () => {
+        const now = new Date();
+        const options = {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric',
+        };
+        const formattedDateTime = now.toLocaleString('en-US', options);
+        setCurrentDateTime(formattedDateTime);
+    };
 
     return (
         <div className="dashboard-container">
@@ -47,22 +58,54 @@ const Dashboard = () => {
                 </div>
             </div>
             <div className="status-container">
-                <div className="status-box" style={{ backgroundColor: '#ffa766' }}>
+                <div className="status-box" style={{ backgroundColor: 'darkgray' }}>
+                <FaCheckCircle color="#4caf50" size={25} />
                     <p id="one"></p>
                     <span className="status-count">Total no. of Employees</span>
                 </div>
-                <div className="status-box" style={{ backgroundColor: '#ff6666' }}>
+                <div className="status-box" style={{ backgroundColor: 'darkgray' }}>
+                <FaTimesCircle color="#f44336" size={25} />
                     <p id="two"></p>
                     <span className="status-count">Unallocated Employee</span>
                 </div>
-                <div className="status-box" style={{ backgroundColor: '#1aff9a' }}>
+                <div className="status-box" style={{ backgroundColor: 'darkgray' }}>
+                
+                <FaCheckCircle color="#4caf50" size={25} />
                     <p id="three"></p>
                     <span className="status-count">Allocated Employee</span>
                 </div>
             </div>
-            <div className="chart-container">
-                <canvas id="employeeChart" width="383" height="383" style={{ display: 'block', boxSizing: 'border-box', height: '307px', width: '307px' }}></canvas>
-            </div>
+            
+            <PieChart width={400} height={250}>
+              <Pie
+                data={[
+                  { name: "Approved", value:50},
+                  { name: "Rejected", value: 24 },
+                  { name: "Pending", value: 14 },
+                ]}
+                dataKey="value"
+                fontSize={15}
+                nameKey="name"
+                cx="50%"
+                cy="50%"
+                outerRadius={80}
+                fill="#8884d8"
+                label={({ name, percent }) =>
+                  `${name} ${(percent * 100).toFixed(0)}%`
+                }
+              >
+                {[
+                  { name: "Approved", value: 50 },
+                  { name: "Rejected", value: 24 },
+                  { name: "Pending", value: 14 },
+                ].map((entry, index) => (
+                  <Cell
+                    key={`cell-${index}`}
+                    fill={COLORS[index % COLORS.length]}
+                  />
+                ))}
+              </Pie>
+            </PieChart>
         </div>
     );
 };

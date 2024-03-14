@@ -1,7 +1,7 @@
 /* Project.css */
  
 .project-container {
-    margin: 90px auto; /* Center the form horizontally */
+    margin: 160px 415px; /* Center the form horizontally */
     width: 50%;
     display: flex; /* Use flexbox to align fields */
     justify-content: space-between; /* Space between fields */
