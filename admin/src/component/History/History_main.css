@@ -58,7 +58,9 @@ th {
 }
  
 label {
-    display: block;
+    width: 125px;
+    display: inline-block;
     margin-bottom: 5px;
     font-weight: bold;
+
 }
