@@ -1,8 +1,19 @@
 import React from 'react'
- 
+ import { useState } from 'react'
 import "./dash.css"
+import Header from '../Header/Header'
+import Side from '../Side_Bar/Side'
 const Login = () => {
+    const [headerText, setHeaderText] = useState('Dashboard ');
+
+const handleMenuItemClick = (text) => {
+  setHeaderText(text);
+};
+    
   return (
+    <>
+    <Header headerText={headerText} />
+      <Side onMenuItemClick={handleMenuItemClick} />
     <div className='demo'>
      
     <div class="container_D">
@@ -112,6 +123,7 @@ const Login = () => {
         </div>
     </div>
     </div>
+    </>
   )
 }
  

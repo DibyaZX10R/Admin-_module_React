@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Allocation.css"
+import Header from '../Header/Header'
+import Side from '../Side_Bar/Side'
  
 const Allocation = () => {
+    const [headerText, setHeaderText] = useState('Employee Allocation');
+
+    const handleMenuItemClick = (text) => {
+      setHeaderText(text);
+    };
   return (
+    <>
+     <Header headerText={headerText} />
+      <Side onMenuItemClick={handleMenuItemClick} />
     <div>
     <div class="container1 ">
         {/* <h2 style={{ color: 'red' }}>Employee Allocation:</h2> */}
@@ -54,6 +64,7 @@ const Allocation = () => {
         </form>
     </div>
     </div>
+    </>
   )
 }
  

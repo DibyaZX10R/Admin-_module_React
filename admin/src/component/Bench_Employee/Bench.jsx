@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Bench.css"
+import Header from '../Header/Header'
+import Side from '../Side_Bar/Side'
  
 const Bench = () => {
+    const [headerText, setHeaderText] = useState('Bench Employees ');
+
+const handleMenuItemClick = (text) => {
+  setHeaderText(text);
+};
   return (
    
- 
+ <>
+    <Header headerText={headerText} />
+      <Side onMenuItemClick={handleMenuItemClick} />
 <div class="container2">
     {/* <h2 style={{ color: 'red' }}>Bench Employee List</h2> */}
     <form class="bench-container">
@@ -55,7 +64,7 @@ const Bench = () => {
         </div>
     </div>
 </div>
-   
+</>
   )
 }
  

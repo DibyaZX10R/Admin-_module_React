@@ -5,6 +5,7 @@ import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import {
   BrowserRouter, Routes, Route
 } from "react-router-dom"
+import Login from './component/Login/login';
 import Dashboard from './component/Dashboard/dashboard'
 import Project from './component/Project_Master/Project'
 import Side from './component/Side_Bar/Side'
@@ -22,12 +23,12 @@ function App() {
   };
 
   return (
-    <>
-      <Header headerText={headerText} />
-      <Side onMenuItemClick={handleMenuItemClick} />
 
+    <>
+    
       <Routes>
-        <Route path='/' element={<Dashboard />} />
+        <Route path='/' element={ <Login/>}/>
+        <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/Project' element={<Project />} />
         <Route path='/Allocation' element={<Allocation />} />
         <Route path='/Bench' element={<Bench />} />

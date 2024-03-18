@@ -7,6 +7,8 @@ import {
     FaTimesCircle,
     FaExclamationTriangle,
   } from "react-icons/fa";
+import Side from '../Side_Bar/Side';
+import Header from '../Header/Header';
 
 const COLORS = ["#4caf50", "#f44336", "#ff9800"];
 
@@ -38,12 +40,20 @@ const Dashboard = () => {
         const formattedDateTime = now.toLocaleString('en-US', options);
         setCurrentDateTime(formattedDateTime);
     };
+    const [headerText, setHeaderText] = useState('Welcome To Home ');
+
+    const handleMenuItemClick = (text) => {
+      setHeaderText(text);
+    };
 
     return (
+      <>
+       <Header headerText={headerText} />
+      <Side onMenuItemClick={handleMenuItemClick} />
         <div className="dashboard-container">
-            <div className="pending-div">
+            {/* <div className="pending-div">
                 <span className="pending">No pending task</span>
-            </div>
+            </div> */}
             <div className="date-time-card">
                 <div className="date-time">{currentDateTime}</div>
             </div>
@@ -107,6 +117,7 @@ const Dashboard = () => {
               </Pie>
             </PieChart>
         </div>
+        </>
     );
 };
 

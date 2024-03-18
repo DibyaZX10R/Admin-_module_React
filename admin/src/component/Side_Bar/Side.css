@@ -71,7 +71,7 @@
 
 .sign-out-button {
   padding: 10px 20px;
-    background-color: #325c3f;
+    background-color: #006ccb;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -84,5 +84,5 @@
 }
 
 .sign-out-button:hover {
-  background-color: #0f1c13;
+  background-color: #00417f;
 }

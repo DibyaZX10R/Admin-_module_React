@@ -10,8 +10,13 @@ const Side = ({ onMenuItemClick }) => {
           <i className="fas fa-bars"></i>
         </div>
         <ul className="menu-container" id="maincontent">
+        {/* <li className="menu-item active ">
+            <Link to={`/Login`} className="menu-link" onClick={() => onMenuItemClick('Login')}>
+              <i className="fas fa-tachometer-alt"></i><span>Login</span>
+            </Link>
+          </li> */}
           <li className="menu-item active ">
-            <Link to={`/`} className="menu-link" onClick={() => onMenuItemClick('Dashboard')}>
+            <Link to={`/dashboard`} className="menu-link" onClick={() => onMenuItemClick('Dashboard')}>
               <i className="fas fa-tachometer-alt"></i><span>Dashboard</span>
             </Link>
           </li>
@@ -42,8 +47,9 @@ const Side = ({ onMenuItemClick }) => {
           </li>
         </ul>
         <div className="sign-out-container">
-          
-          <button className="sign-out-button">Sign Out</button>
+          <Link to={`/`}>
+          <button  className="sign-out-button">Sign Out</button>
+          </Link>
         </div>
       </div>
     </div>

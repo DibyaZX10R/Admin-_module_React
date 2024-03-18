@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./History_main.css"
+import Header from '../Header/Header';
+import Side from '../Side_Bar/Side';
  
 const History = () => {
+    const [headerText, setHeaderText] = useState(' History');
+
+  const handleMenuItemClick = (text) => {
+    setHeaderText(text);
+  };
     return (
+        <>
+        
+      <Header headerText={headerText} />
+      <Side onMenuItemClick={handleMenuItemClick} />
         <div>
             <h2 style={{ color: 'red' }}>History:</h2>
  
@@ -62,6 +73,7 @@ const History = () => {
                 </tbody>
             </table>
         </div>
+        </>
     );
 }
  

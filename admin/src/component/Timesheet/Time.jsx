@@ -1,9 +1,19 @@
  
-import React from 'react';
+import React, { useState } from 'react';
 import './Time.css';
+import Header from '../Header/Header';
+import Side from '../Side_Bar/Side';
  
 const Time = () => {
+  const [headerText, setHeaderText] = useState('My Timesheet');
+
+  const handleMenuItemClick = (text) => {
+    setHeaderText(text);
+  };
   return (
+    <>
+      <Header headerText={headerText} />
+      <Side onMenuItemClick={handleMenuItemClick} />
     <div>
       <div className="employee-info">
        
@@ -67,6 +77,7 @@ const Time = () => {
         Total Activity Hours:<input type="text" id="totalActivityHours"  />
       </div>
     </div>
+    </>
   );
 };
  
