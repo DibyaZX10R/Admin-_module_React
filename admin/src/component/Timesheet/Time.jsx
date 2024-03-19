@@ -58,18 +58,7 @@ const Time = () => {
               <th>Action</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>25-01-2024</td>
-              <td>09:00 AM</td>
-              <td>05:00 PM</td>
-              <td>Project A</td>
-              <td>Client X</td>
-              <td>8</td>
-              <td>Approved</td>
-              <td>Action</td>
-            </tr>
-          </tbody>
+          
         </table>
       </section>
       <div className="totalHour-div">
