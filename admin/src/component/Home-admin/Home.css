@@ -19,10 +19,10 @@
   
   .date-time-card {
     position: absolute;
-    margin-left: 705px;
+    margin-left: 673px;
     margin-top: 78px;
     height: 42px;
-    width: 500px;
+    width: 472px;
     top: 3.5%;
     left: 40%;
     transform: translate(-50%, -50%);
@@ -43,7 +43,7 @@
   .pending-div {
 	position: absolute;
 	top: 10%;
-	left: 30%;
+	left: 20%;
 	transform: translate(-20%, -20%);
 	text-align: center;
 	display: flex;
