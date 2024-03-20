@@ -3,7 +3,7 @@ import React from 'react'
 import "./dash.css"
 import Header from '../Header/Header'
 import Side from '../Side_Bar/Side'
-const Login = () => {
+const Dashboard = () => {
     const [headerText, setHeaderText] = useState('Dashboard ');
 
 const handleMenuItemClick = (text) => {
@@ -127,5 +127,5 @@ const handleMenuItemClick = (text) => {
   )
 }
  
-export default Login
+export default Dashboard
  
